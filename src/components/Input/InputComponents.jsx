@@ -40,19 +40,19 @@ return (
     }
     if(mode == 'textarea'){
 return (
-        <textarea {...props} className='TextArea'/>
+        <textarea placeholder='Pain between 14 and 15 teeth' {...props} className='TextArea'/>
       )
     }
 
     if ( mode == 'phone'){
         return (
-            <input number={number} {...props} className='InputPhone'/>
+                <input  placeholder='+971 4 54 12 72' number={number} {...props} className='InputPhone'/>
         )
     }
 
     if(mode == 'name'){
         return(
-            <input name={name} {...props} className='InputName'/>
+                <input placeholder='Onurhan' name={name} {...props} className='InputName'/>
         )
         
     }

@@ -1,10 +1,18 @@
 *{
-    background: rgba(230, 230, 230, 0.801);
-    height: 100%
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F1F1F6;
 }
-.container{
+body{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    min-width: 1200px;
     display: flex;
     flex-direction: column;
+    margin-top: 70px;
 }
 
 .TextArea{
@@ -12,25 +20,22 @@
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;   
     resize: none;
-    width: 400px;
+    width: 358px;
     box-sizing: border-box;
     border: none;
-    height: 90px;
+    height: 84px;
     line-height: 21px;
-    color: #003;
-    background: rgba(247, 247, 247, 0.801);
+    color: #000;
+    background: #FFFFFF;
     font-size: 16px;
     padding: 12px 16px;
     border-radius: 12px;
     margin-bottom: 20px;
-    outline: none;
-    transition: transform 400ms ease;
     &:hover{
         outline: none;
         border: none;
     }
     &:focus{
-        transform: scale(1.1) translate(20px, 5px);
         outline: none;
         border: none;
     }
@@ -41,25 +46,22 @@
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;   
     resize: none;
-    width: 300px;
+    width: 360px;
     box-sizing: border-box;
     border: none;
-    height: 30px;
+    height: 48px;
     line-height: 21px;
-    color: #003;
-    background: rgba(247, 247, 247, 0.801);
+    color: #000;
+    background: #FFFFFF;
     font-size: 16px;
     padding: 12px 16px;
     border-radius: 12px;
     margin-bottom: 20px;
-    outline: none;
-    transition: transform 400ms ease;
     &:hover{
         outline: none;
         border: none;
     }
     &:focus{
-        transform: scale(1.1) translate(20px, 5px);
         outline: none;
         border: none;
     }
@@ -70,25 +72,22 @@
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;   
     resize: none;
-    width: 300px;
+    width: 360px;
     box-sizing: border-box;
     border: none;
-    height: 30px;
+    height: 48px;
     line-height: 21px;
-    color: #003;
-    background: rgba(247, 247, 247, 0.801);
+    color: #000;
+    background: #FFFFFF;
     font-size: 16px;
     padding: 12px 16px;
     border-radius: 12px;
     margin-bottom: 20px;
-    outline: none;
-    transition: transform 400ms ease;
     &:hover{
         outline: none;
         border: none;
     }
     &:focus{
-        transform: scale(1.1) translate(20px, 5px);
         outline: none;
         border: none;
     }
