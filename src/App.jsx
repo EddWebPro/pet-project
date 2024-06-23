@@ -1,11 +1,18 @@
 import { useState } from 'react'
-import InputComponents from './components/InputComponents'
+import InputComponents from './components/Input/InputComponents'
 
 function App() {
 
   return (
     <>
-    <InputComponents/>
+    <div className='container'>
+        <InputComponents mode='phone'/>
+        <InputComponents mode='name'/>
+        <InputComponents mode='textarea'/>
+        
+    </div>
+    
+    
     </>
   )
 }

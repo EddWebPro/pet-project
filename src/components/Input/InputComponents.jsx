@@ -1,20 +1,24 @@
 import React from 'react'
 import { IoIosClose } from "react-icons/io";
-import '../style.scss';
+import './input.scss'
+import { renderToStaticMarkup } from 'react-dom/server';
 
 
 const InputComponents = ({
     type = 'text',
     name,
     value,
+    number,
     placeholder,
     onChange,
     onClear,
     error,
     icon,
+    mode,
     ...props
 }) => {
-     return (
+    if(mode == 'ordenar'){
+return (
         <div className={`input-components ${error ? 'error' : ''}`}>
             {icon && <span className='input-icon'>{icon}</span>}
             <input
@@ -33,6 +37,27 @@ const InputComponents = ({
             {error && <span className='error-message'>{error}</span>}
         </div>
   )
+    }
+    if(mode == 'textarea'){
+return (
+        <textarea {...props} className='TextArea'/>
+      )
+    }
+
+    if ( mode == 'phone'){
+        return (
+            <input number={number} {...props} className='InputPhone'/>
+        )
+    }
+
+    if(mode == 'name'){
+        return(
+            <input name={name} {...props} className='InputName'/>
+        )
+        
+    }
+    
+     
 }
 
 
