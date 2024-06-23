@@ -41,7 +41,23 @@ body{
     }
 }
 
+.input_container-text-area{
+    position: relative;
+    svg{
+        position: absolute;
+        left: 320px;
+        top: 12px;
+        border-radius: 50%;
+        &:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+}
+
+
 .InputPhone{
+    
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;   
@@ -64,6 +80,21 @@ body{
     &:focus{
         outline: none;
         border: none;
+    }
+    
+}
+
+.input_container-phone{
+    position: relative;
+    svg{
+        position: absolute;
+        left: 320px;
+        top: 12px;
+        border-radius: 50%;
+        &:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
     }
 }
 
@@ -90,5 +121,19 @@ body{
     &:focus{
         outline: none;
         border: none;
+    }
+}
+
+.input_container-name{
+    position: relative;
+    svg{
+        position: absolute;
+        left: 320px;
+        top: 12px;
+        border-radius: 50%;
+        &:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
     }
 }
